@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: white;
+}
+
+/* ÁREA PRINCIPAL */
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.9)
+    );
+}
+
+/* CAIXA DE LOGIN */
+
+.login-box {
+  width: 380px;
+
+  background: rgba(20, 20, 20, 0.95);
+
+  padding: 45px;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* LOGO */
+
+.login-box h1 {
+  color: #e50914;
+
+  font-size: 36px;
+
+  margin-bottom: 20px;
+}
+
+/* ENTRAR */
+
+.login-box h2 {
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+
+.login-box input {
+  height: 50px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  padding: 0 15px;
+
+  font-size: 16px;
+
+  background: #333;
+
+  color: white;
+
+  outline: none;
+}
+
+.login-box input:focus {
+  background: #444;
+}
+
+/* BOTÃO */
+
+.login-box button {
+  height: 50px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #e50914;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-box button:hover {
+  background: #f6121d;
+}
+
+/* ERRO */
+
+#erro {
+  color: #ff5757;
+
+  font-size: 14px;
+
+  min-height: 20px;
+}
+
+/* AVISO */
+
+.aviso {
+  margin-top: 15px;
+
+  color: #aaa;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
