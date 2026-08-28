@@ -50,8 +50,8 @@ const filmes = [
   {
     titulo: "Marília Pópis",
     ano: "2025",
-    sinopse: "Adicione aqui a sinopse de Marília Pópis.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Após desaparecer nos céus de Londres em 1930, a lendária babá Marília Pópis retorna quase um século depois — e aterrissa em pleno calor pernambucano de 2026. Sua nova missão é ajudar uma família à beira do caos, abalada pelos conflitos entre o patriarca e seus filhos, que enfrentam suas próprias dificuldades de identidade. Como se isso não bastasse, a chegada de uma tia distante completamente doidinha e de uma freira rebelde com problemas no convento torna a situação ainda mais complicada. Entre confusões familiares, calor infernal, assaltos depois das 18h e muitas piadas ácidas, Marília Pópis terá que fazer o impossível para manter todos unidos — e, principalmente, segurar as pontas antes que tudo desmorone.",
+    elenco: ["Artur Coelho", "Andrey Vieira", "Gabriel Vitor", "Matheus Thiago", "Samuel Erivaldo", "Marília Romeiro", "Aldineide de Queiroz"],
     poster: "imagens/MARÍLIAPÓPIS.png"
   },
 
