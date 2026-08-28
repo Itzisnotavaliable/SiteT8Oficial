@@ -41,7 +41,7 @@ const filmes = [
 
   {
     titulo: "GEOGRAFADOS",
-    ano: "2026",
+    ano: "2025",
     sinopse: "Adicione aqui a sinopse de GEOGRAFADOS.",
     elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
     poster: "imagens/GEOGRAFADOS.png"
@@ -57,7 +57,7 @@ const filmes = [
 
   {
     titulo: "N1",
-    ano: "2026",
+    ano: "2025",
     sinopse: "Adicione aqui a sinopse de N1.",
     elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
     poster: "imagens/N1.png"
