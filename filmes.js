@@ -18,8 +18,8 @@ const filmes = [
   {
     titulo: "AFTS 3",
     ano: "2025",
-    sinopse: "Adicione aqui a sinopse de AFTS 3.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Depois de tudo o que enfrentaram, o grupo já deveria estar acostumado ao absurdo. Não está. Quando uma nova sequência de acontecimentos transforma mais uma vez a rotina da escola em completo caos, sobreviver deixa de ser apenas uma questão de enfrentar ameaças — é também tentar entender o que diabos está acontecendo. Entre planos que dão errado, conflitos cada vez mais ridículos e situações completamente fora de controle, o grupo embarca em sua aventura mais caótica até então, onde cada erro se torna um grande espetáculo patacumbástico. Em AFTS 3, o terror dá espaço à comédia, mas os problemas estão longe de acabar.",
+    elenco: ["Artur Coelho", "Andrey Vieira", "Gabriel Vitor", "Matheus Thiago", "Samuel Erivaldo", "Arthur Teti", "Daniella de Assis", "Sheyla Mafra", "Edja Costa"],
     poster: "imagens/AFTS3.png"
   },
 
