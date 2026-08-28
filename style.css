@@ -1508,3 +1508,268 @@ input {
   }
 
 }
+
+/* ========================================
+   TIER LIST
+======================================== */
+
+.tier-body {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.tier-container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 135px 0 80px;
+}
+
+.tier-container > h1 {
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+
+.tier-container > p {
+  color: #aaa;
+  font-size: 16px;
+  margin: 0 0 35px;
+}
+
+
+/* TABELA */
+
+.tier-list {
+  width: 100%;
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tier-linha {
+  width: 100%;
+  min-height: 125px;
+
+  display: flex;
+
+  border-bottom: 1px solid #292929;
+}
+
+.tier-linha:last-child {
+  border-bottom: none;
+}
+
+
+/* LETRAS S, A, B... */
+
+.tier-nome {
+  width: 110px;
+  min-height: 125px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+  font-weight: 800;
+  color: #111;
+}
+
+.tier-s {
+  background: #ff7f7f;
+}
+
+.tier-a {
+  background: #ffbf7f;
+}
+
+.tier-b {
+  background: #ffdf7f;
+}
+
+.tier-c {
+  background: #ffff7f;
+}
+
+.tier-d {
+  background: #bfff7f;
+}
+
+.tier-f {
+  background: #7fff7f;
+}
+
+
+/* ÁREA ONDE OS FILMES SÃO SOLTOS */
+
+.tier-area {
+  flex: 1;
+  min-width: 0;
+  min-height: 125px;
+
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding: 8px;
+
+  background: #181818;
+}
+
+
+/* CARDS DOS FILMES */
+
+.tier-card {
+  width: 75px;
+  flex: 0 0 75px;
+
+  cursor: grab;
+  user-select: none;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.tier-card:hover {
+  transform: scale(1.06);
+}
+
+.tier-card:active {
+  cursor: grabbing;
+}
+
+.tier-card.arrastando {
+  opacity: 0.4;
+}
+
+.tier-card img {
+  display: block;
+
+  width: 75px;
+  height: 110px;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+}
+
+
+/* NÃO CLASSIFICADOS */
+
+.nao-classificados {
+  margin-top: 35px;
+}
+
+.nao-classificados h2 {
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+.tier-pool {
+  width: 100%;
+  min-height: 150px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  gap: 12px;
+
+  padding: 18px;
+
+  background: #151515;
+
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+
+/* BOTÕES */
+
+.tier-acoes {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.tier-botao {
+  padding: 13px 22px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #e50914;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.tier-botao:hover {
+  background: #ff101b;
+  transform: translateY(-2px);
+}
+
+.tier-botao-secundario {
+  background: #292929;
+}
+
+.tier-botao-secundario:hover {
+  background: #3a3a3a;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+  .tier-container {
+    max-width: 94%;
+    padding-top: 125px;
+  }
+
+  .tier-container > h1 {
+    font-size: 34px;
+  }
+
+  .tier-linha {
+    min-height: 100px;
+  }
+
+  .tier-nome {
+    width: 60px;
+    min-height: 100px;
+    font-size: 28px;
+  }
+
+  .tier-area {
+    min-height: 100px;
+  }
+
+  .tier-card {
+    width: 58px;
+    flex-basis: 58px;
+  }
+
+  .tier-card img {
+    width: 58px;
+    height: 87px;
+  }
+
+}
