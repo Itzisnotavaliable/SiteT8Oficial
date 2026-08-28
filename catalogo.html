@@ -14,12 +14,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body class="catalogo-body">
-
-  <!-- =========================
-       BARRA SUPERIOR
-  ========================== -->
 
   <header class="navbar">
 
@@ -52,40 +47,28 @@
 
   </header>
 
-
-  <!-- =========================
-       CONTEÚDO PRINCIPAL
-  ========================== -->
-
   <main>
-
-
-    <!-- =========================
-         BANNER
-    ========================== -->
 
     <section class="destaque">
 
       <div class="destaque-conteudo">
 
         <span class="destaque-categoria">
-          PRODUÇÃO TIME 08
+          PRODUÇÕES TIME 08
         </span>
 
         <h1>
-          AFTS
+          TIME 08
         </h1>
 
         <h2>
-          A Origem do Mal
+          Um universo. Várias histórias.
         </h2>
 
-        <p class="destaque-descricao">
-          Conheça uma das produções do Time 08.
-          Explore o catálogo completo e descubra
-          todas as histórias.
+        <p>
+          Explore as produções, personagens e projetos
+          que fazem parte do universo do Time 08.
         </p>
-
 
         <div class="destaque-botoes">
 
@@ -93,7 +76,7 @@
             class="botao-destaque botao-ver"
             onclick="abrirDetalhes(filmes[0])"
           >
-            Ver detalhes
+            Ver destaque
           </button>
 
           <a
@@ -108,11 +91,6 @@
       </div>
 
     </section>
-
-
-    <!-- =========================
-         FILMES
-    ========================== -->
 
     <section
       class="catalogo-section"
@@ -131,12 +109,6 @@
 
       </div>
 
-
-      <!--
-        O catalogo.js coloca
-        automaticamente os filmes aqui.
-      -->
-
       <div
         class="cards"
         id="cards"
@@ -146,20 +118,12 @@
 
   </main>
 
-
-  <!-- =========================
-       MODAL DO FILME
-  ========================== -->
-
   <div
     class="modal"
     id="modal"
   >
 
     <div class="modal-conteudo">
-
-
-      <!-- FECHAR -->
 
       <button
         class="fechar-modal"
@@ -168,9 +132,6 @@
       >
         ×
       </button>
-
-
-      <!-- POSTER -->
 
       <div class="modal-poster">
 
@@ -182,9 +143,6 @@
 
       </div>
 
-
-      <!-- INFORMAÇÕES -->
-
       <div class="modal-informacoes">
 
         <span class="modal-categoria">
@@ -195,9 +153,7 @@
           Título
         </h1>
 
-
         <div class="modal-divisor"></div>
-
 
         <div class="modal-bloco">
 
@@ -211,7 +167,6 @@
 
         </div>
 
-
         <div class="modal-bloco">
 
           <h3>
@@ -223,7 +178,6 @@
           </p>
 
         </div>
-
 
         <div class="modal-bloco">
 
@@ -243,19 +197,8 @@
 
   </div>
 
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
-  <!--
-    filmes.js precisa carregar primeiro.
-  -->
-
   <script src="filmes.js"></script>
-
   <script src="catalogo.js"></script>
-
 
 </body>
 
