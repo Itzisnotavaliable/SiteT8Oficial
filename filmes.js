@@ -17,10 +17,18 @@ const filmes = [
 
   {
     titulo: "AFTS 3",
-    ano: "2026",
+    ano: "2025",
     sinopse: "Adicione aqui a sinopse de AFTS 3.",
     elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
     poster: "imagens/AFTS3.png"
+  },
+
+  {
+    titulo: "AFTS 4",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de BBBCAST.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/AFTS4.png"
   },
 
   {
@@ -41,7 +49,7 @@ const filmes = [
 
   {
     titulo: "Marília Pópis",
-    ano: "2026",
+    ano: "2025",
     sinopse: "Adicione aqui a sinopse de Marília Pópis.",
     elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
     poster: "imagens/MARÍLIAPÓPIS.png"
@@ -53,5 +61,13 @@ const filmes = [
     sinopse: "Adicione aqui a sinopse de N1.",
     elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
     poster: "imagens/N1.png"
+  },
+
+  {
+    titulo: "O Retorno de Marília Pópis",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de N1.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/ORDMP.png"
   }
 ];
