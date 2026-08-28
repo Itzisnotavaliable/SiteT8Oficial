@@ -1,25 +1,57 @@
 const filmes = [
   {
-    titulo: "Filme 1",
-    ano: "2026",
-    sinopse: "Essa é a sinopse do primeiro filme.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
-    poster: "imagens/filme1.jpg"
-  },
-
-  {
-    titulo: "Filme 2",
+    titulo: "AFTS",
     ano: "2025",
-    sinopse: "Essa é a sinopse do segundo filme.",
-    elenco: ["Pessoa 4", "Pessoa 5"],
-    poster: "imagens/filme2.jpg"
+    sinopse: "Adicione aqui a sinopse de AFTS.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/AFTS1.png"
   },
 
   {
-    titulo: "Filme 3",
-    ano: "2024",
-    sinopse: "Essa é a sinopse do terceiro filme.",
-    elenco: ["Pessoa 6", "Pessoa 7"],
-    poster: "imagens/filme3.jpg"
+    titulo: "AFTS 2",
+    ano: "2025",
+    sinopse: "Adicione aqui a sinopse de AFTS 2.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/AFTS2.png"
+  },
+
+  {
+    titulo: "AFTS 3",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de AFTS 3.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/AFTS3.png"
+  },
+
+  {
+    titulo: "BBBCAST",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de BBBCAST.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/BBBCAST.png"
+  },
+
+  {
+    titulo: "GEOGRAFADOS",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de GEOGRAFADOS.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/GEOGRAFADOS.png"
+  },
+
+  {
+    titulo: "Marília Pópis",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de Marília Pópis.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/MARÍLIAPÓPIS.png"
+  },
+
+  {
+    titulo: "N1",
+    ano: "2026",
+    sinopse: "Adicione aqui a sinopse de N1.",
+    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    poster: "imagens/N1.png"
   }
 ];
