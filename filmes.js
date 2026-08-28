@@ -10,8 +10,8 @@ const filmes = [
   {
     titulo: "AFTS 2",
     ano: "2025",
-    sinopse: "Adicione aqui a sinopse de AFTS 2.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Após libertarem Artur, o grupo acredita que o pesadelo finalmente chegou ao fim. Mas a tranquilidade dura pouco: a entidade que o possuía continua à solta e encontra uma nova vítima. Desta vez, porém, ela abandona as sombras e transforma a escola em seu próprio jogo. Sem saber em quem confiar e enfrentando uma ameaça cada vez mais imprevisível, o grupo precisa encontrar uma forma de detê-la antes que ela faça uma nova vítima.",
+    elenco: ["Artur Coelho", "Andrey Vieira", "Gabriel Vitor", "Matheus Thiago", "Samuel Erivaldo", "Maria Cecília", "Glauco Souza", "Rejane Melo"],
     poster: "imagens/AFTS2.png"
   },
 
