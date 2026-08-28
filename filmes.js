@@ -26,8 +26,8 @@ const filmes = [
   {
     titulo: "AFTS 4",
     ano: "2026",
-    sinopse: "Adicione aqui a sinopse de BBBCAST.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Um novo ano começa no Cícero Dias — e, com ele, novas regras, novos desafios e retornos que ninguém esperava. Enquanto o Time 8 original tenta se adaptar à chegada de uma nova geração tão caótica e patacumbástica quanto eles, um novo grupo de antagonistas entra em cena: os professores de Naturezas. Entre problemas sem solução, conflitos entre gerações e um Ghostface que definitivamente não é fã dos novatos, o caos do segundo ano rapidamente foge do controle. Agora, o antigo Time 8 terá que aprender a coexistir, se adaptar e, principalmente, sobreviver a mais um ano em que absolutamente tudo pode acontecer.",
+    elenco: ["Artur Coelho", "Andrey Vieira", "Gabriel Vitor", "Matheus Thiago", "Samuel Erivaldo", "Ebenézer Lobão", "Eraldo Argôlo", "Ivanildo Mangueira", "Arthur Teti", "Daniella de Assis", "Sheyla Mafra"],
     poster: "imagens/AFTS4.png"
   },
 
@@ -35,7 +35,7 @@ const filmes = [
     titulo: "BBBCAST",
     ano: "2026",
     sinopse: "Adicione aqui a sinopse de BBBCAST.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    elenco: [""],
     poster: "imagens/BBBCAST.png"
   },
 
