@@ -1,6 +1,6 @@
-/* =========================
-   RESET
-========================= */
+/* ==========================================
+   CONFIGURAÇÕES GERAIS
+========================================== */
 
 * {
   margin: 0;
@@ -8,71 +8,110 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #111;
-  color: #fff;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #0b0b0b;
+
+  color: #ffffff;
 }
 
-/* =========================
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+/* ==========================================
    LOGIN
-========================= */
+========================================== */
 
 .login-container {
   width: 100%;
+
   min-height: 100vh;
 
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
   padding: 20px;
 
+
   background:
+
     radial-gradient(
       circle at top,
-      rgba(229, 9, 20, 0.12),
+      rgba(229, 9, 20, 0.13),
       transparent 35%
     ),
+
     linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.95)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.96)
     ),
+
     #080808;
 }
 
+
 .login-box {
   width: 390px;
-  max-width: 100%;
 
-  background: rgba(18, 18, 18, 0.97);
+  max-width: 100%;
 
   padding: 45px;
 
-  border-radius: 14px;
 
   display: flex;
+
   flex-direction: column;
 
   gap: 15px;
 
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.65);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    rgba(18, 18, 18, 0.97);
+
+
+  border:
+
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+
+  border-radius: 14px;
+
+
+  box-shadow:
+
+    0 25px 70px
+    rgba(0, 0, 0, 0.65);
 }
+
 
 .login-box h1 {
   color: #e50914;
 
   font-size: 38px;
+
   letter-spacing: 1px;
 
   margin-bottom: 15px;
 }
+
 
 .login-box h2 {
   font-size: 28px;
@@ -80,271 +119,657 @@ body {
   margin-bottom: 5px;
 }
 
+
 .login-box input {
+  width: 100%;
+
   height: 52px;
 
-  border: 1px solid transparent;
+  padding:
 
-  border-radius: 7px;
+    0
+    15px;
 
-  padding: 0 15px;
-
-  font-size: 16px;
 
   background: #2b2b2b;
 
   color: white;
 
+
+  border:
+
+    1px solid
+    transparent;
+
+
+  border-radius: 7px;
+
+
   outline: none;
+
+  font-size: 16px;
+
 
   transition: 0.2s;
 }
 
+
 .login-box input::placeholder {
-  color: #aaa;
+  color: #999;
 }
+
 
 .login-box input:focus {
   background: #333;
 
-  border-color: #666;
+  border-color: #777;
 }
 
+
 .login-box button {
+  width: 100%;
+
   height: 52px;
 
   margin-top: 10px;
 
-  border: none;
-
-  border-radius: 7px;
 
   background: #e50914;
 
   color: white;
 
+
+  border: none;
+
+  border-radius: 7px;
+
+
   font-size: 16px;
 
   font-weight: bold;
 
+
   cursor: pointer;
 
-  transition: 0.2s;
+
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
+
 
 .login-box button:hover {
   background: #f6121d;
 
-  transform: translateY(-1px);
+  transform:
+    translateY(-1px);
 }
 
+
 #erro {
+  min-height: 20px;
+
   color: #ff5c5c;
 
   font-size: 14px;
-
-  min-height: 20px;
 }
+
 
 .aviso {
   margin-top: 10px;
 
-  color: #aaa;
+  color: #999;
 
   font-size: 13px;
 
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* =========================
+
+/* ==========================================
    NAVBAR
-========================= */
+========================================== */
 
 .navbar {
   position: fixed;
 
   top: 0;
+
   left: 0;
 
+
   width: 100%;
-  height: 68px;
+
+  height: 70px;
+
+
+  padding:
+
+    0
+    45px;
+
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
-  padding: 0 48px;
 
-  background: rgba(5, 5, 5, 0.96);
+  background:
+
+    rgba(5, 5, 5, 0.96);
+
+
+  backdrop-filter:
+    blur(10px);
+
+
+  border-bottom:
+
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
 
   z-index: 1000;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 
 .logo {
   color: #e50914;
 
+  text-decoration: none;
+
   font-size: 28px;
+
+  font-weight: 800;
 
   letter-spacing: 1px;
 }
 
+
 .navbar nav {
   display: flex;
+
   align-items: center;
 
   gap: 28px;
 }
 
-.navbar a {
-  color: white;
+
+.navbar nav a {
+  position: relative;
+
+
+  color: #e5e5e5;
 
   text-decoration: none;
 
+
   font-size: 15px;
 
-  transition: 0.2s;
-}
-
-.navbar a:hover {
-  color: #aaa;
-}
-
-/* =========================
-   CATÁLOGO
-========================= */
-
-.catalogo-body {
-  background: #111;
-
-  color: white;
-
-  min-height: 100vh;
-}
-
-main {
-  width: 100%;
-}
-
-/* =========================
-   DESTAQUE
-========================= */
-
-.destaque {
-  min-height: 500px;
-
-  display: flex;
-  align-items: flex-end;
-
-  padding: 120px 48px 65px;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.08),
-      rgba(0, 0, 0, 0.25) 50%,
-      #111 100%
-    ),
-    radial-gradient(
-      circle at 75% 35%,
-      rgba(229, 9, 20, 0.12),
-      transparent 30%
-    ),
-    #1b1b1b;
-}
-
-.destaque-conteudo {
-  max-width: 650px;
-}
-
-.destaque-conteudo h2 {
-  font-size: 52px;
-
-  line-height: 1;
-
-  margin-bottom: 18px;
-}
-
-.destaque-conteudo p {
-  font-size: 18px;
-
-  color: #d8d8d8;
-
-  line-height: 1.5;
-
-  max-width: 550px;
-}
-
-/* =========================
-   SEÇÃO DO CATÁLOGO
-========================= */
-
-.catalogo-section {
-  padding: 25px 48px 70px;
-}
-
-.catalogo-section h2 {
-  font-size: 26px;
-
-  margin-bottom: 22px;
-}
-
-/* =========================
-   CARDS
-========================= */
-
-.cards {
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fill, minmax(165px, 1fr));
-
-  gap: 24px 16px;
-}
-
-.card {
-  min-width: 0;
-
-  cursor: pointer;
-
-  position: relative;
 
   transition:
-    transform 0.25s ease,
-    filter 0.25s ease;
+    color 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.06);
 
-  z-index: 5;
+.navbar nav a:hover {
+  color: white;
 }
 
-.card img {
+
+.navbar nav a::after {
+  content: "";
+
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -7px;
+
+
+  width: 0;
+
+  height: 2px;
+
+
+  background: #e50914;
+
+
+  transition:
+    width 0.2s;
+}
+
+
+.navbar nav a:hover::after,
+.navbar nav .nav-ativo::after {
+  width: 100%;
+}
+
+
+/* ==========================================
+   CATÁLOGO
+========================================== */
+
+.catalogo-body {
+  min-height: 100vh;
+
+  background: #0b0b0b;
+
+  color: white;
+}
+
+
+/* ==========================================
+   BANNER
+========================================== */
+
+.destaque {
+  position: relative;
+
+
   width: 100%;
 
-  aspect-ratio: 2 / 3;
+  min-height: 620px;
 
-  object-fit: cover;
 
-  display: block;
+  display: flex;
 
-  border-radius: 8px;
+  align-items: flex-end;
 
-  background: #242424;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  padding:
+
+    150px
+    5%
+    90px;
+
+
+  /*
+    COLOQUE SUA IMAGEM COMO:
+
+    imagens/banner.png
+  */
+
+  background-image:
+
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.96) 0%,
+      rgba(0, 0, 0, 0.82) 25%,
+      rgba(0, 0, 0, 0.40) 55%,
+      rgba(0, 0, 0, 0.10) 80%
+    ),
+
+    linear-gradient(
+      to top,
+      #0b0b0b 0%,
+      rgba(11, 11, 11, 0.85) 8%,
+      transparent 40%
+    ),
+
+    url("imagens/banner.png");
+
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
 }
 
-.card p {
-  margin-top: 9px;
+
+.destaque::after {
+  content: "";
+
+
+  position: absolute;
+
+  inset: 0;
+
+
+  background:
+
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.15),
+      transparent 35%
+    );
+
+
+  pointer-events: none;
+}
+
+
+.destaque-conteudo {
+  position: relative;
+
+
+  width: 620px;
+
+  max-width: 100%;
+
+
+  z-index: 2;
+}
+
+
+.destaque-categoria {
+  display: inline-block;
+
+
+  margin-bottom: 13px;
+
+
+  color: #e50914;
+
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+
+  letter-spacing: 2px;
+}
+
+
+.destaque-conteudo h1 {
+  margin-bottom: 2px;
+
+
+  font-size:
+
+    clamp(
+      60px,
+      7vw,
+      100px
+    );
+
+
+  line-height: 0.95;
+
+
+  letter-spacing: -3px;
+}
+
+
+.destaque-conteudo h2 {
+  margin-top: 7px;
+
+  margin-bottom: 20px;
+
+
+  color: #ddd;
+
+
+  font-size: 27px;
+
+  font-weight: 500;
+}
+
+
+.destaque-descricao {
+  max-width: 520px;
+
+
+  color: #d2d2d2;
+
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+
+  text-shadow:
+
+    0 2px 8px
+    rgba(0, 0, 0, 0.8);
+}
+
+
+/* ==========================================
+   BOTÕES DO BANNER
+========================================== */
+
+.destaque-botoes {
+  display: flex;
+
+  gap: 12px;
+
+
+  margin-top: 28px;
+}
+
+
+.botao-destaque {
+  min-height: 48px;
+
+
+  padding:
+
+    0
+    24px;
+
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+  border: none;
+
+  border-radius: 6px;
+
+
+  text-decoration: none;
+
 
   font-size: 15px;
 
   font-weight: bold;
 
-  color: #eee;
+
+  cursor: pointer;
+
+
+  transition:
+
+    transform 0.2s,
+    background 0.2s;
+}
+
+
+.botao-destaque:hover {
+  transform:
+    translateY(-2px);
+}
+
+
+.botao-ver {
+  background: #e50914;
+
+  color: white;
+}
+
+
+.botao-ver:hover {
+  background: #f6121d;
+}
+
+
+.botao-catalogo {
+  background:
+
+    rgba(255, 255, 255, 0.16);
+
+
+  color: white;
+
+
+  backdrop-filter:
+    blur(8px);
+}
+
+
+.botao-catalogo:hover {
+  background:
+
+    rgba(255, 255, 255, 0.25);
+}
+
+
+/* ==========================================
+   SEÇÃO FILMES
+========================================== */
+
+.catalogo-section {
+  position: relative;
+
+
+  padding:
+
+    20px
+    4%
+    80px;
+
+
+  z-index: 10;
+}
+
+
+.titulo-secao {
+  margin-bottom: 22px;
+
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 15px;
+}
+
+
+.titulo-secao h2 {
+  font-size: 27px;
+}
+
+
+.titulo-secao span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards {
+  display: grid;
+
+
+  grid-template-columns:
+
+    repeat(
+      auto-fill,
+      minmax(170px, 1fr)
+    );
+
+
+  gap:
+
+    28px
+    16px;
+}
+
+
+.card {
+  position: relative;
+
+
+  min-width: 0;
+
+
+  cursor: pointer;
+
+
+  transition:
+
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+
+.card:hover {
+  transform:
+    translateY(-7px)
+    scale(1.035);
+
+
+  z-index: 5;
+}
+
+
+.card img {
+  width: 100%;
+
+
+  aspect-ratio: 2 / 3;
+
+
+  display: block;
+
+
+  object-fit: cover;
+
+
+  background: #222;
+
+
+  border-radius: 8px;
+
+
+  box-shadow:
+
+    0 12px 35px
+    rgba(0, 0, 0, 0.5);
+
+
+  transition:
+
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+
+.card:hover img {
+  box-shadow:
+
+    0 20px 45px
+    rgba(0, 0, 0, 0.8);
+
+
+  filter:
+    brightness(1.08);
+}
+
+
+.card p {
+  margin-top: 10px;
+
+
+  color: #f1f1f1;
+
+
+  font-size: 15px;
+
+  font-weight: bold;
+
 
   white-space: nowrap;
 
@@ -353,448 +778,799 @@ main {
   text-overflow: ellipsis;
 }
 
-/* =========================
+
+/* ==========================================
    MODAL
-========================= */
+========================================== */
 
 .modal {
   display: none;
 
+
   position: fixed;
+
 
   inset: 0;
 
-  background: rgba(0, 0, 0, 0.88);
-
-  backdrop-filter: blur(5px);
-
-  z-index: 2000;
-
-  justify-content: center;
-  align-items: center;
 
   padding: 35px;
+
+
+  justify-content: center;
+
+  align-items: center;
+
+
+  background:
+
+    rgba(0, 0, 0, 0.9);
+
+
+  backdrop-filter:
+    blur(8px);
+
+
+  z-index: 2000;
 }
+
 
 .modal.ativo {
   display: flex;
 }
 
+
 .modal-conteudo {
   position: relative;
 
-  width: 950px;
+
+  width: 1000px;
+
   max-width: 95%;
 
-  height: 570px;
+
+  height: 600px;
+
   max-height: 90vh;
+
 
   display: flex;
 
-  background: #181818;
-
-  border-radius: 14px;
 
   overflow: hidden;
 
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #181818;
+
+
+  border:
+
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+
+  border-radius: 14px;
+
+
+  box-shadow:
+
+    0 35px 100px
+    rgba(0, 0, 0, 0.9);
 }
 
-/* =========================
-   MODAL POSTER
-========================= */
+
+/* ==========================================
+   POSTER DO MODAL
+========================================== */
 
 .modal-poster {
+  position: relative;
+
+
   width: 50%;
+
   height: 100%;
+
 
   background: #222;
 }
 
-.modal-poster img {
-  width: 100%;
-  height: 100%;
 
-  object-fit: cover;
+.modal-poster::after {
+  content: "";
 
-  display: block;
+
+  position: absolute;
+
+  inset: 0;
+
+
+  background:
+
+    linear-gradient(
+      to right,
+      transparent 75%,
+      rgba(24, 24, 24, 0.5)
+    );
+
+
+  pointer-events: none;
 }
 
-/* =========================
-   MODAL INFORMAÇÕES
-========================= */
+
+.modal-poster img {
+  width: 100%;
+
+  height: 100%;
+
+
+  display: block;
+
+
+  object-fit: cover;
+}
+
+
+/* ==========================================
+   INFORMAÇÕES DO MODAL
+========================================== */
 
 .modal-informacoes {
   width: 50%;
 
-  padding: 65px 45px;
+
+  padding:
+
+    65px
+    45px;
+
 
   display: flex;
+
   flex-direction: column;
 
-  gap: 24px;
+
+  gap: 22px;
+
 
   overflow-y: auto;
 }
 
+
+.modal-categoria {
+  color: #e50914;
+
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+
+  letter-spacing: 2px;
+}
+
+
 .modal-informacoes h1 {
-  font-size: 40px;
+  font-size: 42px;
 
   line-height: 1.1;
 }
 
-.modal-informacoes p {
-  color: #ccc;
+
+.modal-divisor {
+  width: 45px;
+
+  height: 3px;
+
+
+  background: #e50914;
+
+
+  border-radius: 10px;
+}
+
+
+.modal-bloco h3 {
+  margin-bottom: 7px;
+
+
+  color: #fff;
+
+
+  font-size: 14px;
+
+
+  text-transform: uppercase;
+
+
+  letter-spacing: 1px;
+}
+
+
+.modal-bloco p {
+  color: #bdbdbd;
+
 
   font-size: 16px;
 
   line-height: 1.65;
 }
 
-/* =========================
-   BOTÃO FECHAR MODAL
-========================= */
+
+/* ==========================================
+   FECHAR MODAL
+========================================== */
 
 .fechar-modal {
   position: absolute;
 
-  top: 16px;
-  right: 16px;
 
-  width: 42px;
-  height: 42px;
+  top: 17px;
+
+  right: 17px;
+
+
+  width: 43px;
+
+  height: 43px;
+
 
   display: flex;
-  justify-content: center;
+
   align-items: center;
+
+  justify-content: center;
+
+
+  background:
+
+    rgba(15, 15, 15, 0.9);
+
+
+  color: white;
+
 
   border: none;
 
   border-radius: 50%;
 
-  background: rgba(20, 20, 20, 0.9);
-
-  color: white;
 
   font-size: 28px;
 
+
   cursor: pointer;
+
 
   z-index: 20;
 
-  transition: 0.2s;
+
+  transition:
+
+    background 0.2s,
+    transform 0.2s;
 }
+
 
 .fechar-modal:hover {
   background: #e50914;
 
-  transform: scale(1.05);
+
+  transform:
+    rotate(5deg)
+    scale(1.07);
 }
 
-/* =========================
+
+/* ==========================================
    FAQ
-========================= */
+========================================== */
 
 .faq-body {
-  background: #111;
+  min-height: 100vh;
+
+  background: #0b0b0b;
 
   color: white;
-
-  min-height: 100vh;
 }
+
 
 .faq-container {
   width: 880px;
 
   max-width: 90%;
 
+
   margin: auto;
 
-  padding-top: 135px;
+
+  padding-top: 140px;
+
   padding-bottom: 80px;
 }
 
-.faq-container > h1 {
-  font-size: 44px;
 
+.faq-container > h1 {
   margin-bottom: 10px;
+
+
+  font-size: 44px;
 }
 
+
 .faq-introducao {
-  color: #aaa;
+  margin-bottom: 40px;
+
+
+  color: #999;
+
 
   font-size: 17px;
 
   line-height: 1.5;
-
-  margin-bottom: 40px;
 }
+
 
 .faq-item {
   margin-bottom: 10px;
 
-  border-radius: 7px;
 
   overflow: hidden;
+
+
+  border-radius: 7px;
 }
+
 
 .faq-pergunta {
   width: 100%;
 
-  padding: 22px 25px;
+
+  padding:
+
+    22px
+    25px;
+
 
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
+
+  justify-content: space-between;
+
+
+  background: #242424;
+
+
+  color: white;
+
 
   border: none;
 
-  background: #2b2b2b;
-
-  color: white;
 
   font-size: 18px;
 
   text-align: left;
 
+
   cursor: pointer;
 
-  transition: background 0.2s;
+
+  transition:
+    background 0.2s;
 }
+
 
 .faq-pergunta:hover {
-  background: #3b3b3b;
+  background: #333;
 }
 
+
 .faq-pergunta span {
+  margin-left: 20px;
+
+
   font-size: 30px;
 
   font-weight: 300;
-
-  margin-left: 20px;
 }
+
 
 .faq-resposta {
   max-height: 0;
 
+
   overflow: hidden;
 
-  background: #1d1d1d;
 
-  transition: max-height 0.3s ease;
+  background: #181818;
+
+
+  transition:
+    max-height 0.3s ease;
 }
 
-.faq-resposta p {
-  padding: 24px 25px;
 
-  color: #ddd;
+.faq-resposta p {
+  padding:
+
+    24px
+    25px;
+
+
+  color: #ccc;
+
 
   font-size: 16px;
 
   line-height: 1.65;
 }
 
-.faq-item.aberto .faq-resposta {
+
+.faq-item.aberto
+.faq-resposta {
   max-height: 350px;
 }
 
-/* =========================
+
+/* ==========================================
    TIER LIST - BASE
-========================= */
+========================================== */
 
 .tier-body {
-  background: #111;
+  min-height: 100vh;
+
+
+  background: #0b0b0b;
+
 
   color: white;
-
-  min-height: 100vh;
 }
+
 
 .tier-container {
   width: 1100px;
 
   max-width: 94%;
 
+
   margin: auto;
 
+
   padding-top: 120px;
+
   padding-bottom: 80px;
 }
 
-.tier-container h1 {
-  font-size: 42px;
 
+.tier-container h1 {
   margin-bottom: 12px;
+
+
+  font-size: 42px;
 }
+
 
 .tier-container > p {
-  color: #aaa;
-
   margin-bottom: 35px;
+
+
+  color: #999;
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
+
+/* ==========================================
+   TABLETS
+========================================== */
 
 @media (max-width: 900px) {
 
   .navbar {
-    padding: 0 25px;
+    padding:
+
+      0
+      25px;
   }
+
 
   .navbar nav {
-    gap: 16px;
+    gap: 17px;
   }
+
 
   .destaque {
-    min-height: 430px;
+    min-height: 560px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+
+    padding-left: 30px;
+
+    padding-right: 30px;
   }
 
-  .destaque-conteudo h2 {
-    font-size: 42px;
-  }
 
   .catalogo-section {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+
+    padding-right: 30px;
   }
 
-  .modal-conteudo {
-    width: 800px;
+
+  .cards {
+    grid-template-columns:
+
+      repeat(
+        auto-fill,
+        minmax(150px, 1fr)
+      );
   }
 
 }
 
+
+/* ==========================================
+   CELULAR
+========================================== */
+
 @media (max-width: 700px) {
 
   .navbar {
+    min-height: 70px;
+
     height: auto;
 
-    min-height: 68px;
+
+    padding:
+
+      14px
+      20px;
+
 
     flex-direction: column;
 
     align-items: flex-start;
 
-    padding: 15px 20px;
 
     gap: 12px;
   }
 
+
   .navbar nav {
     width: 100%;
 
+
+    display: flex;
+
+
     gap: 14px;
 
-    flex-wrap: wrap;
+
+    overflow-x: auto;
+
+
+    padding-bottom: 3px;
   }
 
-  .navbar a {
+
+  .navbar nav a {
+    flex-shrink: 0;
+
+
     font-size: 13px;
   }
+
 
   .logo {
     font-size: 24px;
   }
 
+
   .destaque {
-    min-height: 430px;
+    min-height: 600px;
+
 
     padding:
-      150px
+
+      180px
       20px
-      45px;
+      60px;
+
+
+    background-position:
+      65% center;
   }
+
+
+  .destaque::before {
+    content: "";
+
+
+    position: absolute;
+
+    inset: 0;
+
+
+    background:
+
+      linear-gradient(
+        to top,
+        #0b0b0b 0%,
+        rgba(0, 0, 0, 0.8) 45%,
+        rgba(0, 0, 0, 0.15)
+      );
+  }
+
+
+  .destaque-conteudo {
+    position: relative;
+
+    z-index: 3;
+  }
+
+
+  .destaque-conteudo h1 {
+    font-size: 58px;
+
+
+    letter-spacing: -2px;
+  }
+
 
   .destaque-conteudo h2 {
-    font-size: 36px;
+    font-size: 22px;
   }
 
-  .destaque-conteudo p {
-    font-size: 16px;
+
+  .destaque-descricao {
+    font-size: 15px;
   }
+
+
+  .destaque-botoes {
+    flex-wrap: wrap;
+  }
+
 
   .catalogo-section {
     padding:
-      20px
+
+      15px
       20px
       60px;
   }
 
+
+  .titulo-secao {
+    display: block;
+  }
+
+
+  .titulo-secao span {
+    display: block;
+
+
+    margin-top: 5px;
+  }
+
+
   .cards {
     grid-template-columns:
-      repeat(2, minmax(0, 1fr));
 
-    gap: 18px 12px;
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+
+    gap:
+
+      20px
+      12px;
   }
+
 
   .card:hover {
     transform: none;
   }
 
+
+  /* MODAL */
+
   .modal {
+    padding:
+
+      15px
+      10px;
+
+
     align-items: flex-start;
 
-    padding: 20px 12px;
 
     overflow-y: auto;
   }
 
-  .modal-conteudo {
-    flex-direction: column;
 
+  .modal-conteudo {
     width: 100%;
+
 
     height: auto;
 
+
     max-height: none;
+
+
+    flex-direction: column;
   }
+
 
   .modal-poster {
     width: 100%;
+
     height: auto;
   }
 
+
   .modal-poster img {
     width: 100%;
+
+
     height: auto;
 
+
     aspect-ratio: 2 / 3;
+
 
     object-fit: cover;
   }
 
+
+  .modal-poster::after {
+    background:
+
+      linear-gradient(
+        to bottom,
+        transparent 80%,
+        #181818
+      );
+  }
+
+
   .modal-informacoes {
     width: 100%;
 
-    padding: 32px 25px;
+
+    padding:
+
+      32px
+      25px;
+
 
     overflow: visible;
   }
 
+
   .modal-informacoes h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
+
+
+  /* FAQ */
 
   .faq-container {
     padding-top: 150px;
   }
 
+
   .faq-container > h1 {
     font-size: 34px;
   }
 
-  .faq-pergunta {
-    font-size: 16px;
 
+  .faq-pergunta {
     padding: 18px;
+
+
+    font-size: 16px;
   }
+
 
   .faq-resposta p {
     font-size: 15px;
@@ -802,24 +1578,41 @@ main {
 
 }
 
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
 @media (max-width: 450px) {
 
   .login-box {
-    padding: 30px 22px;
+    padding:
+
+      30px
+      22px;
   }
+
 
   .login-box h1 {
     font-size: 32px;
   }
 
-  .destaque-conteudo h2 {
-    font-size: 31px;
+
+  .destaque-conteudo h1 {
+    font-size: 50px;
   }
 
-  .cards {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+
+  .botao-destaque {
+    padding:
+
+      0
+      18px;
+
+
+    font-size: 14px;
   }
+
 
   .card p {
     font-size: 14px;

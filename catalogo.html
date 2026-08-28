@@ -3,22 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Catálogo - Time 08</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body class="catalogo-body">
 
-  <!-- BARRA SUPERIOR -->
+  <!-- =========================
+       BARRA SUPERIOR
+  ========================== -->
+
   <header class="navbar">
 
-    <h1 class="logo">TIME 08</h1>
+    <a href="catalogo.html" class="logo">
+      TIME 08
+    </a>
 
     <nav>
-      <a href="catalogo.html">Catálogo</a>
+
+      <a
+        href="catalogo.html"
+        class="nav-ativo"
+      >
+        Catálogo
+      </a>
 
       <a href="faq.html">
         Perguntas Frequentes
@@ -31,56 +47,110 @@
       <a href="index.html">
         Sair
       </a>
+
     </nav>
 
   </header>
 
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- =========================
+       CONTEÚDO PRINCIPAL
+  ========================== -->
+
   <main>
 
-    <!-- DESTAQUE -->
+
+    <!-- =========================
+         BANNER
+    ========================== -->
+
     <section class="destaque">
 
       <div class="destaque-conteudo">
 
+        <span class="destaque-categoria">
+          PRODUÇÃO TIME 08
+        </span>
+
+        <h1>
+          AFTS
+        </h1>
+
         <h2>
-          Bem-vindo ao catálogo
+          A Origem do Mal
         </h2>
 
-        <p>
-          Explore os filmes, projetos e produções do Time 08.
+        <p class="destaque-descricao">
+          Conheça uma das produções do Time 08.
+          Explore o catálogo completo e descubra
+          todas as histórias.
         </p>
+
+
+        <div class="destaque-botoes">
+
+          <button
+            class="botao-destaque botao-ver"
+            onclick="abrirDetalhes(filmes[0])"
+          >
+            Ver detalhes
+          </button>
+
+          <a
+            href="#filmes"
+            class="botao-destaque botao-catalogo"
+          >
+            Ver catálogo
+          </a>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- CATÁLOGO -->
-    <section class="catalogo-section">
+    <!-- =========================
+         FILMES
+    ========================== -->
 
-      <h2>
-        Filmes
-      </h2>
+    <section
+      class="catalogo-section"
+      id="filmes"
+    >
+
+      <div class="titulo-secao">
+
+        <h2>
+          Filmes
+        </h2>
+
+        <span>
+          Produções do Time 08
+        </span>
+
+      </div>
+
 
       <!--
-        Os pôsteres serão colocados aqui
-        automaticamente pelo catalogo.js
+        O catalogo.js coloca
+        automaticamente os filmes aqui.
       -->
 
       <div
         class="cards"
         id="cards"
-      >
-      </div>
+      ></div>
 
     </section>
 
   </main>
 
 
-  <!-- MODAL DE DETALHES -->
+  <!-- =========================
+       MODAL DO FILME
+  ========================== -->
+
   <div
     class="modal"
     id="modal"
@@ -88,16 +158,20 @@
 
     <div class="modal-conteudo">
 
-      <!-- BOTÃO FECHAR -->
+
+      <!-- FECHAR -->
+
       <button
         class="fechar-modal"
         onclick="fecharDetalhes()"
+        aria-label="Fechar"
       >
         ×
       </button>
 
 
-      <!-- METADE ESQUERDA: PÔSTER -->
+      <!-- POSTER -->
+
       <div class="modal-poster">
 
         <img
@@ -109,24 +183,59 @@
       </div>
 
 
-      <!-- METADE DIREITA: INFORMAÇÕES -->
+      <!-- INFORMAÇÕES -->
+
       <div class="modal-informacoes">
+
+        <span class="modal-categoria">
+          PRODUÇÃO TIME 08
+        </span>
 
         <h1 id="modalTitulo">
           Título
         </h1>
 
-        <p id="modalSinopse">
-          Sinopse
-        </p>
 
-        <p id="modalAno">
-          Ano de lançamento
-        </p>
+        <div class="modal-divisor"></div>
 
-        <p id="modalElenco">
-          Elenco
-        </p>
+
+        <div class="modal-bloco">
+
+          <h3>
+            Sinopse
+          </h3>
+
+          <p id="modalSinopse">
+            Sinopse
+          </p>
+
+        </div>
+
+
+        <div class="modal-bloco">
+
+          <h3>
+            Lançamento
+          </h3>
+
+          <p id="modalAno">
+            Ano de lançamento
+          </p>
+
+        </div>
+
+
+        <div class="modal-bloco">
+
+          <h3>
+            Elenco
+          </h3>
+
+          <p id="modalElenco">
+            Elenco
+          </p>
+
+        </div>
 
       </div>
 
@@ -135,19 +244,18 @@
   </div>
 
 
-  <!-- JAVASCRIPT -->
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
   <!--
-    filmes.js precisa vir primeiro,
-    pois contém a lista de filmes
+    filmes.js precisa carregar primeiro.
   -->
+
   <script src="filmes.js"></script>
 
-  <!--
-    catalogo.js usa os dados
-    presentes em filmes.js
-  -->
   <script src="catalogo.js"></script>
+
 
 </body>
 
