@@ -49,7 +49,7 @@ function entrar() {
 
     erro.textContent = "";
 
-    alert("Login realizado!");
+    window.location.href = "catalogo.html";
 
   } else {
 
