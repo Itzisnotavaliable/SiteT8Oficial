@@ -367,34 +367,7 @@ input {
 ========================================== */
 
 .destaque {
-  position: relative;
-
-
-  width: 100%;
-
-  min-height: 620px;
-
-
-  display: flex;
-
-  align-items: flex-end;
-
-
-  padding:
-
-    150px
-    5%
-    90px;
-
-
-  /*
-    COLOQUE SUA IMAGEM COMO:
-
-    imagens/banner.png
-  */
-
   background-image:
-
     linear-gradient(
       to right,
       rgba(0, 0, 0, 0.96) 0%,
@@ -402,21 +375,16 @@ input {
       rgba(0, 0, 0, 0.40) 55%,
       rgba(0, 0, 0, 0.10) 80%
     ),
-
     linear-gradient(
       to top,
       #0b0b0b 0%,
       rgba(11, 11, 11, 0.85) 8%,
       transparent 40%
     ),
-
     url("imagens/banner.png");
 
-
   background-size: cover;
-
   background-position: center;
-
   background-repeat: no-repeat;
 }
 
