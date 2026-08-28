@@ -1216,3 +1216,295 @@ input {
     font-size: 14px;
   }
 }
+
+/* =========================
+   TIER LIST
+========================= */
+
+.tier-body {
+  min-height: 100vh;
+
+  background: #0b0b0b;
+
+  color: white;
+}
+
+.tier-container {
+  width: 1200px;
+
+  max-width: 94%;
+
+  margin: auto;
+
+  padding-top: 120px;
+
+  padding-bottom: 80px;
+}
+
+.tier-container > h1 {
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+.tier-container > p {
+  color: #999;
+
+  margin-bottom: 35px;
+
+  font-size: 16px;
+}
+
+/* LISTA */
+
+.tier-list {
+  width: 100%;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background: #151515;
+}
+
+.tier-linha {
+  display: flex;
+
+  min-height: 130px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.tier-linha:last-child {
+  border-bottom: none;
+}
+
+/* LETRA */
+
+.tier-nome {
+  width: 120px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 38px;
+
+  font-weight: bold;
+
+  color: #111;
+}
+
+/* CORES */
+
+.tier-s {
+  background: #ff7f7f;
+}
+
+.tier-a {
+  background: #ffbf7f;
+}
+
+.tier-b {
+  background: #ffdf7f;
+}
+
+.tier-c {
+  background: #ffff7f;
+}
+
+.tier-d {
+  background: #bfff7f;
+}
+
+.tier-f {
+  background: #7fff7f;
+}
+
+/* ÁREA */
+
+.tier-area {
+  flex: 1;
+
+  min-height: 130px;
+
+  padding: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  background: #171717;
+}
+
+/* PÔSTER */
+
+.tier-card {
+  width: 80px;
+
+  cursor: grab;
+
+  user-select: none;
+
+  transition:
+    transform 0.15s,
+    opacity 0.15s;
+}
+
+.tier-card:hover {
+  transform: scale(1.06);
+}
+
+.tier-card:active {
+  cursor: grabbing;
+}
+
+.tier-card.arrastando {
+  opacity: 0.45;
+}
+
+.tier-card img {
+  width: 100%;
+
+  aspect-ratio: 2 / 3;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 5px 15px
+    rgba(0, 0, 0, 0.5);
+}
+
+/* NÃO CLASSIFICADOS */
+
+.nao-classificados {
+  margin-top: 40px;
+}
+
+.nao-classificados h2 {
+  margin-bottom: 18px;
+
+  font-size: 24px;
+}
+
+.tier-pool {
+  min-height: 150px;
+
+  padding: 18px;
+
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+
+  background: #151515;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  border-radius: 8px;
+}
+
+/* BOTÕES */
+
+.tier-acoes {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.tier-botao {
+  min-height: 46px;
+
+  padding: 0 22px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #e50914;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.tier-botao:hover {
+  background: #f6121d;
+
+  transform: translateY(-1px);
+}
+
+.tier-botao-secundario {
+  background: #2d2d2d;
+}
+
+.tier-botao-secundario:hover {
+  background: #444;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+  .tier-container {
+    padding-top: 150px;
+  }
+
+  .tier-container > h1 {
+    font-size: 34px;
+  }
+
+  .tier-linha {
+    min-height: 100px;
+  }
+
+  .tier-nome {
+    width: 65px;
+
+    font-size: 27px;
+  }
+
+  .tier-area {
+    min-height: 100px;
+  }
+
+  .tier-card {
+    width: 60px;
+  }
+
+  .tier-pool {
+    min-height: 120px;
+  }
+
+}

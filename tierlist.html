@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Tier List - Time 08</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tier-body">
+
+  <header class="navbar">
+
+    <a href="catalogo.html" class="logo">
+      TIME 08
+    </a>
+
+    <nav>
+
+      <a href="catalogo.html">
+        Catálogo
+      </a>
+
+      <a href="faq.html">
+        Perguntas Frequentes
+      </a>
+
+      <a
+        href="tierlist.html"
+        class="nav-ativo"
+      >
+        Tier List
+      </a>
+
+      <a href="index.html">
+        Sair
+      </a>
+
+    </nav>
+
+  </header>
+
+  <main class="tier-container">
+
+    <h1>Tier List</h1>
+
+    <p>
+      Arraste os pôsteres para classificar as produções.
+    </p>
+
+    <div class="tier-list">
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-s">
+          S
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="S"
+        ></div>
+      </div>
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-a">
+          A
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="A"
+        ></div>
+      </div>
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-b">
+          B
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="B"
+        ></div>
+      </div>
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-c">
+          C
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="C"
+        ></div>
+      </div>
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-d">
+          D
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="D"
+        ></div>
+      </div>
+
+      <div class="tier-linha">
+        <div class="tier-nome tier-f">
+          F
+        </div>
+
+        <div
+          class="tier-area"
+          data-tier="F"
+        ></div>
+      </div>
+
+    </div>
+
+    <section class="nao-classificados">
+
+      <h2>
+        Não classificados
+      </h2>
+
+      <div
+        class="tier-pool"
+        id="tierPool"
+      ></div>
+
+    </section>
+
+    <div class="tier-acoes">
+
+      <button
+        id="salvarTier"
+        class="tier-botao"
+      >
+        Salvar Tier List
+      </button>
+
+      <button
+        id="resetarTier"
+        class="tier-botao tier-botao-secundario"
+      >
+        Resetar
+      </button>
+
+    </div>
+
+  </main>
+
+  <script src="filmes.js"></script>
+  <script src="tierlist.js"></script>
+
+</body>
+
+</html>
