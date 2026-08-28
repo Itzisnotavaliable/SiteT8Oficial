@@ -1,101 +1,123 @@
+/* =========================
+   RESET
+========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #000;
-  color: white;
+html {
+  scroll-behavior: smooth;
 }
 
-/* ÁREA PRINCIPAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* =========================
+   LOGIN
+========================= */
 
 .login-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  padding: 20px;
+
   background:
+    radial-gradient(
+      circle at top,
+      rgba(229, 9, 20, 0.12),
+      transparent 35%
+    ),
     linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.9)
-    );
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.95)
+    ),
+    #080808;
 }
 
-/* CAIXA DE LOGIN */
-
 .login-box {
-  width: 380px;
+  width: 390px;
+  max-width: 100%;
 
-  background: rgba(20, 20, 20, 0.95);
+  background: rgba(18, 18, 18, 0.97);
 
   padding: 45px;
 
-  border-radius: 8px;
+  border-radius: 14px;
 
   display: flex;
   flex-direction: column;
 
   gap: 15px;
-}
 
-/* LOGO */
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.65);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
 
 .login-box h1 {
   color: #e50914;
 
-  font-size: 36px;
+  font-size: 38px;
+  letter-spacing: 1px;
 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-
-/* ENTRAR */
 
 .login-box h2 {
   font-size: 28px;
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-/* INPUTS */
-
 .login-box input {
-  height: 50px;
+  height: 52px;
 
-  border: none;
+  border: 1px solid transparent;
 
-  border-radius: 5px;
+  border-radius: 7px;
 
   padding: 0 15px;
 
   font-size: 16px;
 
-  background: #333;
+  background: #2b2b2b;
 
   color: white;
 
   outline: none;
+
+  transition: 0.2s;
+}
+
+.login-box input::placeholder {
+  color: #aaa;
 }
 
 .login-box input:focus {
-  background: #444;
+  background: #333;
+
+  border-color: #666;
 }
 
-/* BOTÃO */
-
 .login-box button {
-  height: 50px;
+  height: 52px;
 
   margin-top: 10px;
 
   border: none;
 
-  border-radius: 5px;
+  border-radius: 7px;
 
   background: #e50914;
 
@@ -112,22 +134,20 @@ body {
 
 .login-box button:hover {
   background: #f6121d;
+
+  transform: translateY(-1px);
 }
 
-/* ERRO */
-
 #erro {
-  color: #ff5757;
+  color: #ff5c5c;
 
   font-size: 14px;
 
   min-height: 20px;
 }
 
-/* AVISO */
-
 .aviso {
-  margin-top: 15px;
+  margin-top: 10px;
 
   color: #aaa;
 
@@ -136,148 +156,368 @@ body {
   line-height: 1.5;
 }
 
-/* CATÁLOGO */
-
-.catalogo-body {
-  background: #111;
-  color: white;
-  min-height: 100vh;
-}
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
   position: fixed;
+
   top: 0;
+  left: 0;
 
   width: 100%;
-  height: 70px;
+  height: 68px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 50px;
+  padding: 0 48px;
 
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(5, 5, 5, 0.96);
 
   z-index: 1000;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .logo {
   color: #e50914;
+
   font-size: 28px;
+
+  letter-spacing: 1px;
 }
 
 .navbar nav {
   display: flex;
-  gap: 25px;
+  align-items: center;
+
+  gap: 28px;
 }
 
 .navbar a {
   color: white;
+
   text-decoration: none;
+
   font-size: 15px;
+
+  transition: 0.2s;
 }
 
 .navbar a:hover {
   color: #aaa;
 }
 
-/* DESTAQUE */
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalogo-body {
+  background: #111;
+
+  color: white;
+
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+/* =========================
+   DESTAQUE
+========================= */
 
 .destaque {
-  height: 500px;
+  min-height: 500px;
 
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 
-  padding: 70px 50px;
+  padding: 120px 48px 65px;
 
   background:
     linear-gradient(
-      to top,
-      #111,
-      transparent
+      to bottom,
+      rgba(0, 0, 0, 0.08),
+      rgba(0, 0, 0, 0.25) 50%,
+      #111 100%
     ),
-    #222;
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(229, 9, 20, 0.12),
+      transparent 30%
+    ),
+    #1b1b1b;
 }
 
 .destaque-conteudo {
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .destaque-conteudo h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 52px;
+
+  line-height: 1;
+
+  margin-bottom: 18px;
 }
 
 .destaque-conteudo p {
   font-size: 18px;
-  color: #ddd;
+
+  color: #d8d8d8;
+
+  line-height: 1.5;
+
+  max-width: 550px;
 }
 
-/* CATÁLOGO */
+/* =========================
+   SEÇÃO DO CATÁLOGO
+========================= */
 
 .catalogo-section {
-  padding: 30px 50px;
+  padding: 25px 48px 70px;
 }
 
 .catalogo-section h2 {
-  margin-bottom: 20px;
+  font-size: 26px;
+
+  margin-bottom: 22px;
 }
 
-/* CARDS */
+/* =========================
+   CARDS
+========================= */
 
 .cards {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(165px, 1fr));
+
+  gap: 24px 16px;
 }
 
 .card {
-  width: 180px;
+  min-width: 0;
+
   cursor: pointer;
 
-  transition: transform 0.25s;
+  position: relative;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.06);
+
+  z-index: 5;
 }
 
 .card img {
   width: 100%;
-  border-radius: 6px;
+
+  aspect-ratio: 2 / 3;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 8px;
+
+  background: #242424;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card p {
+  margin-top: 9px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  color: #eee;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.88);
+
+  backdrop-filter: blur(5px);
+
+  z-index: 2000;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 35px;
+}
+
+.modal.ativo {
+  display: flex;
+}
+
+.modal-conteudo {
+  position: relative;
+
+  width: 950px;
+  max-width: 95%;
+
+  height: 570px;
+  max-height: 90vh;
+
+  display: flex;
+
+  background: #181818;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* =========================
+   MODAL POSTER
+========================= */
+
+.modal-poster {
+  width: 50%;
+  height: 100%;
+
+  background: #222;
+}
+
+.modal-poster img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 
   display: block;
 }
 
-.card p {
-  margin-top: 8px;
+/* =========================
+   MODAL INFORMAÇÕES
+========================= */
+
+.modal-informacoes {
+  width: 50%;
+
+  padding: 65px 45px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  overflow-y: auto;
 }
 
-.card:hover {
-  transform: scale(1.08);
+.modal-informacoes h1 {
+  font-size: 40px;
+
+  line-height: 1.1;
+}
+
+.modal-informacoes p {
+  color: #ccc;
+
+  font-size: 16px;
+
+  line-height: 1.65;
 }
 
 /* =========================
-   PERGUNTAS FREQUENTES
+   BOTÃO FECHAR MODAL
+========================= */
+
+.fechar-modal {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(20, 20, 20, 0.9);
+
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+  z-index: 20;
+
+  transition: 0.2s;
+}
+
+.fechar-modal:hover {
+  background: #e50914;
+
+  transform: scale(1.05);
+}
+
+/* =========================
+   FAQ
 ========================= */
 
 .faq-body {
   background: #111;
+
   color: white;
 
   min-height: 100vh;
 }
 
 .faq-container {
-  width: 850px;
+  width: 880px;
+
   max-width: 90%;
 
   margin: auto;
 
-  padding-top: 140px;
+  padding-top: 135px;
   padding-bottom: 80px;
 }
 
 .faq-container > h1 {
-  font-size: 45px;
+  font-size: 44px;
 
   margin-bottom: 10px;
 }
@@ -287,14 +527,17 @@ body {
 
   font-size: 17px;
 
+  line-height: 1.5;
+
   margin-bottom: 40px;
 }
 
-
-/* PERGUNTA */
-
 .faq-item {
   margin-bottom: 10px;
+
+  border-radius: 7px;
+
+  overflow: hidden;
 }
 
 .faq-pergunta {
@@ -308,11 +551,11 @@ body {
 
   border: none;
 
-  background: #2d2d2d;
+  background: #2b2b2b;
 
   color: white;
 
-  font-size: 19px;
+  font-size: 18px;
 
   text-align: left;
 
@@ -322,59 +565,229 @@ body {
 }
 
 .faq-pergunta:hover {
-  background: #414141;
+  background: #3b3b3b;
 }
-
-
-/* + */
 
 .faq-pergunta span {
   font-size: 30px;
 
   font-weight: 300;
+
+  margin-left: 20px;
 }
-
-
-/* RESPOSTA */
 
 .faq-resposta {
   max-height: 0;
 
   overflow: hidden;
 
-  background: #202020;
+  background: #1d1d1d;
 
   transition: max-height 0.3s ease;
 }
 
 .faq-resposta p {
-  padding: 25px;
+  padding: 24px 25px;
 
   color: #ddd;
 
-  font-size: 17px;
+  font-size: 16px;
 
-  line-height: 1.6;
+  line-height: 1.65;
 }
-
-
-/* QUANDO ABERTA */
 
 .faq-item.aberto .faq-resposta {
-  max-height: 300px;
+  max-height: 350px;
 }
 
+/* =========================
+   TIER LIST - BASE
+========================= */
 
-/* CELULAR */
+.tier-body {
+  background: #111;
+
+  color: white;
+
+  min-height: 100vh;
+}
+
+.tier-container {
+  width: 1100px;
+
+  max-width: 94%;
+
+  margin: auto;
+
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.tier-container h1 {
+  font-size: 42px;
+
+  margin-bottom: 12px;
+}
+
+.tier-container > p {
+  color: #aaa;
+
+  margin-bottom: 35px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar nav {
+    gap: 16px;
+  }
+
+  .destaque {
+    min-height: 430px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .destaque-conteudo h2 {
+    font-size: 42px;
+  }
+
+  .catalogo-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .modal-conteudo {
+    width: 800px;
+  }
+
+}
 
 @media (max-width: 700px) {
 
+  .navbar {
+    height: auto;
+
+    min-height: 68px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 15px 20px;
+
+    gap: 12px;
+  }
+
+  .navbar nav {
+    width: 100%;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .destaque {
+    min-height: 430px;
+
+    padding:
+      150px
+      20px
+      45px;
+  }
+
+  .destaque-conteudo h2 {
+    font-size: 36px;
+  }
+
+  .destaque-conteudo p {
+    font-size: 16px;
+  }
+
+  .catalogo-section {
+    padding:
+      20px
+      20px
+      60px;
+  }
+
+  .cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 18px 12px;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .modal {
+    align-items: flex-start;
+
+    padding: 20px 12px;
+
+    overflow-y: auto;
+  }
+
+  .modal-conteudo {
+    flex-direction: column;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: none;
+  }
+
+  .modal-poster {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-poster img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 2 / 3;
+
+    object-fit: cover;
+  }
+
+  .modal-informacoes {
+    width: 100%;
+
+    padding: 32px 25px;
+
+    overflow: visible;
+  }
+
+  .modal-informacoes h1 {
+    font-size: 32px;
+  }
+
   .faq-container {
-    padding-top: 110px;
+    padding-top: 150px;
   }
 
   .faq-container > h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .faq-pergunta {
@@ -385,6 +798,31 @@ body {
 
   .faq-resposta p {
     font-size: 15px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .login-box {
+    padding: 30px 22px;
+  }
+
+  .login-box h1 {
+    font-size: 32px;
+  }
+
+  .destaque-conteudo h2 {
+    font-size: 31px;
+  }
+
+  .cards {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .card p {
+    font-size: 14px;
   }
 
 }
