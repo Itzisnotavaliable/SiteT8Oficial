@@ -34,16 +34,16 @@ const filmes = [
   {
     titulo: "BBBCAST",
     ano: "2026",
-    sinopse: "Adicione aqui a sinopse de BBBCAST.",
-    elenco: [""],
+    sinopse: "Sinopse em atualização..",
+    elenco: ["Andrey Vieira", "Artur Coelho", "Henrique Samuel", "Pedro Victor", "Matheus Thiago", "Luan Murilo"],
     poster: "imagens/BBBCAST.png"
   },
 
   {
     titulo: "GEOGRAFADOS",
     ano: "2025",
-    sinopse: "Adicione aqui a sinopse de GEOGRAFADOS.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Após os acontecimentos de N1, o Time 08 finalmente volta a se reunir, mas a tranquilidade dura pouco. Uma nova ameaça surge na figura de Daniela de Assis, uma geógrafa determinada a roubar os continentes e reorganizar o planeta à sua própria maneira. Entre planos absurdos, retornos inesperados e uma sequência de situações cada vez mais caóticas, o grupo precisará impedir que a Terra vire o projeto pessoal de sua nova antagonista. Em GEOGRAFADOS, o universo de AFTS abraça de vez a comédia, onde ninguém sabe exatamente o que está acontecendo — e cada problema só torna tudo ainda mais patacumbástico.",
+    elenco: ["Artur Coelho", "Andrey Vieira", "Gabriel Vitor", "Matheus Thiago", "Samuel Erivaldo", "Daniela de Assis"],
     poster: "imagens/GEOGRAFADOS.png"
   },
 
@@ -58,16 +58,16 @@ const filmes = [
   {
     titulo: "N1",
     ano: "2025",
-    sinopse: "Adicione aqui a sinopse de N1.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Entre AFTS 1 e N1, o ETE entrou num período que ninguém gosta de comentar. Gabriel Vitor e Matheus Tiago mostram o que realmente aconteceu nesse intervalo.",
+    elenco: ["Matheus Thiago", "Gabriel Vitor", "Renato Marques", "Judith Butler", "Tobin Bell"],
     poster: "imagens/N1.png"
   },
 
   {
     titulo: "O Retorno de Marília Pópis",
     ano: "2026",
-    sinopse: "Adicione aqui a sinopse de N1.",
-    elenco: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
+    sinopse: "Sinopse em desenvolvimento..",
+    elenco: ["Marília Romeiro", "Aldineide de Queiroz", "Andrey Vieira", "Artur Coelho", "Matheus Thiago", "Gabriel Vitor", "Samuel Erivaldo"],
     poster: "imagens/ORDMP.png"
   }
 ];
