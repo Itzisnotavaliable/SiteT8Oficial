@@ -1,26 +1,31 @@
 const usuarios = [
   {
+    usuario: "Teteuzo",
+    senha: "426425123@Mt"
+  },
+
+  {
+    usuario: "starwnzz",
+    senha: "stah"
+  },
+
+  {
+    usuario: "CHAOS",
+    senha: "AACM"
+  },
+
+  {
+    usuario: "Juditics",
+    senha: "Judiafts"
+  },
+
+  {
+    usuario: "Caaabooomm",
+    senha: "Cibim123"
+  },
+  
+  {
     usuario: "usuario1",
-    senha: "1234"
-  },
-
-  {
-    usuario: "usuario2",
-    senha: "1234"
-  },
-
-  {
-    usuario: "usuario3",
-    senha: "1234"
-  },
-
-  {
-    usuario: "usuario4",
-    senha: "1234"
-  },
-
-  {
-    usuario: "usuario5",
     senha: "1234"
   }
 ];
