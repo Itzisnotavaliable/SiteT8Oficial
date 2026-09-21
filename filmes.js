@@ -75,6 +75,6 @@ const filmes = [
     ano: "2026",
     sinopse: "em desenvolvimento..",
     elenco: ["Elenco em discussão"],
-    poster: "imagens/ORDMP.png"
+    poster: "SCARYMOVIE.png"
   }
 ];
