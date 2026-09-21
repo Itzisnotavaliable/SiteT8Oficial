@@ -69,5 +69,12 @@ const filmes = [
     sinopse: "Sinopse em desenvolvimento..",
     elenco: ["Marília Romeiro", "Aldineide de Queiroz", "Andrey Vieira", "Artur Coelho", "Matheus Thiago", "Gabriel Vitor", "Samuel Erivaldo"],
     poster: "imagens/ORDMP.png"
+  },
+  {
+    titulo: "O Trabalho dos 5 Minutos",
+    ano: "2026",
+    sinopse: "em desenvolvimento..",
+    elenco: ["Elenco em discussão"],
+    poster: "imagens/ORDMP.png"
   }
 ];
