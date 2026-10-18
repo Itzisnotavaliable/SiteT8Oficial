@@ -76,5 +76,12 @@ const filmes = [
     sinopse: "em desenvolvimento..",
     elenco: ["Elenco em discussão"],
     poster: "imagens/SCARYMOVIE.png"
+  },
+  {
+    titulo: "Eles Mexem em Notas",
+    ano: "2026",
+    sinopse: "em desenvolvimento..",
+    elenco: ["Andrey Vieira, Amanda Vitória, Artur Emanuel, Amaro Bezerra, Matheus Thiago, Jeniffer Dantas, Ryan Gabriel"],
+    poster: "ElesMexemEmNotas.png"
   }
 ];
