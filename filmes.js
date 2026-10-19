@@ -80,7 +80,7 @@ const filmes = [
   {
     titulo: "Eles Mexem em Notas",
     ano: "2026",
-    sinopse: "em desenvolvimento..",
+    sinopse: "Neste caótico spin-off de AFTS, Andrey, Amanda e Arthur recebem um poder que jamais deveria ter caído em suas mãos: organizar os grupos dos seminários de Literatura sobre o Romantismo. Entre decisões duvidosas, pendências intermináveis e muita confusão, o trio descobre que brincar de Deus com as notas dos outros pode ter consequências desastrosas. Afinal, o que poderia dar errado?",
     elenco: ["Andrey Vieira, Amanda Vitória, Artur Emanuel, Amaro Bezerra, Matheus Thiago, Jeniffer Dantas, Ryan Gabriel"],
     poster: "ElesMexemEmNotas.png"
   }
