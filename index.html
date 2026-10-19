@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -9,31 +10,41 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <!-- SEO -->
-  <title>Time 08 | Site Oficial, Filmes e Projetos</title>
+  <!-- ===================================== -->
+  <!-- IDENTIDADE E SEO DO TIME 08           -->
+  <!-- ===================================== -->
+
+  <title>Time 08 Oficial | AFTS, Filmes e Produções</title>
 
   <meta
     name="description"
-    content="Site oficial do Time 08. Conheça filmes, projetos, produções autorais, personagens, histórias e conteúdos exclusivos."
+    content="Conheça o Time 08 Oficial, grupo criador de AFTS e outras produções audiovisuais. Descubra nossos filmes, séries, personagens e projetos autorais."
   >
 
-  <meta
-    name="author"
-    content="Time 08"
-  >
+  <meta name="author" content="Time 08">
+
+  <meta name="robots" content="index, follow">
 
   <meta
-    name="robots"
+    name="googlebot"
     content="index, follow"
   >
 
-  <!-- Página oficial -->
+  <meta
+    name="theme-color"
+    content="#111111"
+  >
+
+  <!-- Endereço oficial -->
   <link
     rel="canonical"
     href="https://itzisnotavaliable.github.io/SiteT8Oficial/"
   >
 
-  <!-- Logo do Time 08 como favicon -->
+  <!-- ===================================== -->
+  <!-- ÍCONES                                -->
+  <!-- ===================================== -->
+
   <link
     rel="icon"
     type="image/png"
@@ -45,20 +56,25 @@
     href="/SiteT8Oficial/imagens/logo.png"
   >
 
-  <!-- Open Graph -->
+  <!-- ===================================== -->
+  <!-- COMPARTILHAMENTO EM REDES SOCIAIS     -->
+  <!-- ===================================== -->
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:site_name"
+    content="Time 08 Oficial"
+  >
+
   <meta
     property="og:title"
-    content="Time 08 | Site Oficial, Filmes e Projetos"
+    content="Time 08 Oficial | AFTS, Filmes e Produções"
   >
 
   <meta
     property="og:description"
-    content="Conheça filmes, projetos, produções autorais, personagens, histórias e conteúdos exclusivos do Time 08."
-  >
-
-  <meta
-    property="og:type"
-    content="website"
+    content="O universo do Time 08 começa aqui! Conheça AFTS, nossos filmes, personagens e produções autorais."
   >
 
   <meta
@@ -71,14 +87,95 @@
     content="https://itzisnotavaliable.github.io/SiteT8Oficial/imagens/logo.png"
   >
 
-  <!-- CSS -->
-  <link
-    rel="stylesheet"
-    href="style.css"
+  <meta
+    property="og:locale"
+    content="pt_BR"
   >
+
+  <!-- Prévia em redes sociais -->
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Time 08 Oficial"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Filmes, séries, personagens e projetos do Time 08."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://itzisnotavaliable.github.io/SiteT8Oficial/imagens/logo.png"
+  >
+
+  <!-- ===================================== -->
+  <!-- DADOS ESTRUTURADOS PARA O GOOGLE      -->
+  <!-- ===================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#organization",
+        "name": "Time 08",
+        "alternateName": [
+          "Time 8",
+          "Time 08 Oficial",
+          "Time 8 Oficial"
+        ],
+        "url": "https://itzisnotavaliable.github.io/SiteT8Oficial/",
+        "logo": "https://itzisnotavaliable.github.io/SiteT8Oficial/imagens/logo.png",
+        "description": "Grupo criativo responsável pela produção de AFTS e outros projetos audiovisuais autorais."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#website",
+        "name": "Time 08 Oficial",
+        "alternateName": "Site Oficial do Time 08",
+        "url": "https://itzisnotavaliable.github.io/SiteT8Oficial/",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#webpage",
+        "url": "https://itzisnotavaliable.github.io/SiteT8Oficial/",
+        "name": "Time 08 Oficial | AFTS, Filmes e Produções",
+        "description": "Página oficial do Time 08, grupo criador de AFTS e outras produções autorais.",
+        "isPartOf": {
+          "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#website"
+        },
+        "about": {
+          "@id": "https://itzisnotavaliable.github.io/SiteT8Oficial/#organization"
+        },
+        "inLanguage": "pt-BR"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===================================== -->
+  <!-- CSS ORIGINAL                          -->
+  <!-- ===================================== -->
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
+  <!-- ===================================== -->
+  <!-- LOGIN ORIGINAL                        -->
+  <!-- ===================================== -->
 
   <div class="login-container">
 
@@ -92,19 +189,26 @@
         type="text"
         id="usuario"
         placeholder="Usuário"
+        aria-label="Usuário"
+        autocomplete="username"
       >
 
       <input
         type="password"
         id="senha"
         placeholder="Senha"
+        aria-label="Senha"
+        autocomplete="current-password"
       >
 
-      <button onclick="entrar()">
+      <button
+        type="button"
+        onclick="entrar()"
+      >
         Entrar
       </button>
 
-      <p id="erro"></p>
+      <p id="erro" role="status" aria-live="polite"></p>
 
       <div class="aviso">
         Não é possível criar novas contas.
@@ -115,21 +219,51 @@
 
   </div>
 
-  <section class="sobre-seo">
+  <!-- ===================================== -->
+  <!-- APRESENTAÇÃO PÚBLICA DO TIME 08       -->
+  <!-- ===================================== -->
 
-    <h2>Sobre o Time 08</h2>
+  <section
+    class="sobre-seo"
+    aria-labelledby="sobre-time08"
+  >
+
+    <h2 id="sobre-time08">
+      Sobre o Time 08 Oficial
+    </h2>
 
     <p>
-      O Time 08 é um grupo de produção criativa responsável por filmes,
-      projetos, histórias e experiências autorais.
+      O Time 08 é um grupo de produção audiovisual
+      e criação artística responsável por desenvolver
+      filmes, séries, histórias e projetos autorais.
     </p>
 
     <p>
-      Este é o site oficial do Time 08, reunindo catálogo, produções,
-      personagens, projetos e conteúdos exclusivos.
+      Entre suas produções está AFTS, uma série
+      que mistura comédia, suspense, personagens
+      marcantes e situações caóticas.
+    </p>
+
+    <p>
+      O universo do Time 08 também inclui
+      outras produções e histórias desenvolvidas
+      pelo grupo, reunindo criatividade, humor
+      e diferentes experiências narrativas.
+    </p>
+
+    <p>
+      Este é o site oficial do Time 08,
+      também conhecido como Time 8.
+      Aqui estão reunidas informações
+      sobre suas produções, personagens,
+      filmes e projetos.
     </p>
 
   </section>
+
+  <!-- ===================================== -->
+  <!-- JAVASCRIPT ORIGINAL                   -->
+  <!-- ===================================== -->
 
   <script src="script.js"></script>
 
